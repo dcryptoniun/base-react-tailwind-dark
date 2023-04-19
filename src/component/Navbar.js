@@ -3,18 +3,18 @@ import ThemeSwitch from "./ThemeSwitch";
 
 function Navebar() {
   return (
-    <nav className=" h-16 bg-transparent flex justify-between shadow-xl fixed w-screen">
-      <div className="mx-2 p-2 flex justify-start items-center">
-        <Link to="/" className="text-2xl text-cyan-400 mx-2 px-2">
+    <nav className="flex justify-between w-screen h-16 bg-transparent shadow-xl ">
+      <div className="flex items-center justify-start p-2 mx-2">
+        <Link to="/" className="px-2 mx-2 text-2xl text-cyan-400">
           Logo
         </Link>
       </div>
-      <div className=" flex flex-row ">
-        <div className="flex  justify-around items-center px-4">
-          <Link to="/" className=" mx-2 px-2">
+      <div className="flex flex-row ">
+        <div className="flex items-center justify-around px-4">
+          <Link to="/" className="px-2 mx-2 ">
             Home
           </Link>
-          <Link to="/contact" className=" mx-2 px-2">
+          <Link to="/contact" className="px-2 mx-2 ">
             Contact
           </Link>
 
