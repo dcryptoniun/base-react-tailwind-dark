@@ -1,6 +1,5 @@
 {
   "name": "tailwind-dark-mode",
-  "homepage": "https://dcryptoniun.github.io/base-react-tailwind-dark",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
