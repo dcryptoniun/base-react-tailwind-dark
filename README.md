@@ -14,6 +14,12 @@ To run this project, follow these steps:
 4. Start the development server with `npm start`
 5. Open your browser and navigate to `http://localhost:3000`
 
+Light Mode
+![lightmode](light.jpg)
+
+Dark Mode
+![darkmode](dark.jpg)
+
 # Latest Changes
 
 The latest changes made to the codebase include:
@@ -31,4 +37,4 @@ We welcome contributions to this project! To get started, please follow these gu
 
 # Contact Information
 
-If you have any questions or concerns about this project, please contact the project maintainers at `maintainer@example.com`.
+If you have any questions or concerns about this project, please contact the project maintainers at `https://github.com/dcryptoniun`.
