@@ -1,21 +1,25 @@
 import { useState, useEffect } from "react";
 
 function ThemeSwitch() {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || null);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
+    if (!theme) {
+      if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        setTheme("dark");
+      } else {
+        setTheme("light");
+      }
+    } 
+  }, [theme]);
 
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [theme]);
 
